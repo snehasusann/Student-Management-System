@@ -1,4 +1,3 @@
-**NAME:**  SNEHA SUSAN RAJESH <br>
 **COMPANY:**  CODTECH IT SOLUTIONS <br>
 **ID:**  CT4PP3330 <br>
 **DOMAIN:**  PYTHON PROGRAMMING <br>
@@ -45,5 +44,12 @@ The Student Management System is a web application developed using Django, a hig
 - **Frontend:** HTML, CSS, JavaScript
 - **Database:** SQLite 
 - **Development Environment:** VSCode
+
+**OUTPUT**<br>
+![Screenshot (344)](https://github.com/user-attachments/assets/f95cc3c1-36bc-4447-85cf-d0b42d843692) <br>
+![Screenshot (343)](https://github.com/user-attachments/assets/dbf9a7ad-71ca-4bd4-9a97-089736e4634e)
+
+
+
 
 
