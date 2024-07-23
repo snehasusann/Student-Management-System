@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ student.first_name }} {{ student.last_name }}'s Grades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ student.first_name }} {{ student.last_name }}</h1>
+        <h2>Grades</h2>
+        <ul>
+            {% for grade in grades %}
+            <li>{{ grade.subject }}: {{ grade.grade }}</li>
+            {% endfor %}
+        </ul>
+        <p>Total Marks: {{ total_marks }}</p>
+        <p>Average Grade: {{ average_grade }}</p>
+        <p>Letter Grade: {{ letter_grade }}</p>
+        <div class="links">
+            <a href="{% url 'add_grade' student.id %}">Add Grade</a>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
